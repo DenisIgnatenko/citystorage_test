@@ -20,7 +20,13 @@
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
-      }
+      },
+      "environment": [
+        { "name": "SPRING_PROFILES_ACTIVE", "value": "prod" },
+        { "name": "DB_URL", "value": "jdbc:postgresql://citystorage-db.cyna00y6scf6.us-east-1.rds.amazonaws.com:5432/city_storage" },
+        { "name": "DB_USERNAME", "value": "postgres" },
+        { "name": "DB_PASSWORD", "value": "postgres" }
+      ]
     }
   ],
   "requiresCompatibilities": [
