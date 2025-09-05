@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/city_storage
+    username: user
+    password: password
+
+server:
+  servlet:
+    context-path: /api/v1
