@@ -5,6 +5,15 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
   jpa:
     hibernate:
       ddl-auto: update
