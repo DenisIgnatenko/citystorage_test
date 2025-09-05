@@ -4,7 +4,7 @@
   "executionRoleArn": "arn:aws:ecs:us-east-1:546259008126:task-definition/citystorage-test-task:1",
   "containerDefinitions": [
     {
-      "name": "citystorage",
+      "name": "citystorage-test",
       "image": "546259008126.dkr.ecr.us-east-1.amazonaws.com/citystorage-test",
       "portMappings": [
         {
