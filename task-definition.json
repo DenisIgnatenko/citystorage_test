@@ -1,0 +1,23 @@
+{
+  "family": "citystorage-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:ecs:us-east-1:546259008126:task-definition/citystorage-test-task:1",
+  "containerDefinitions": [
+    {
+      "name": "citystorage",
+      "image": "546259008126.dkr.ecr.us-east-1.amazonaws.com/citystorage-test",
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "1024",
+  "memory": "4096"
+}
