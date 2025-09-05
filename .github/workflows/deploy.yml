@@ -1,8 +1,4 @@
 name: Deploy to AWS
-uses: actions/setup-java@v3
-with:
-  java-version: '17'
-  distribution: 'temurin'
 
 on:
   push:
@@ -21,6 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'temurin'
 
       - name: Build JAR
         run: ./gradlew bootJar
