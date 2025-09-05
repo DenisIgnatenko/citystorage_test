@@ -1,7 +1,7 @@
 {
   "family": "citystorage-task",
   "networkMode": "awsvpc",
-  "executionRoleArn": "arn:aws:ecs:us-east-1:546259008126:task-definition/citystorage-test-task:1",
+  "executionRoleArn": "arn:aws:ecs:us-east-1:546259008126:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "citystorage-test",
